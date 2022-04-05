@@ -31,7 +31,7 @@ const FilmsDetail = () => {
               <p className="card-text">{film?.description}</p>
               <p className="card-text text-muted d-flex justify-content-evenly">
                 <span>Release Year: {film?.release_date}</span>
-                <span>Run Time (min): {film?.running_time}</span>
+                <span> Run Time (min): {film?.running_time}</span>
               </p>
             </div>
           </div>
