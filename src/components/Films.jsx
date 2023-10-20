@@ -5,7 +5,7 @@ const Films = () => {
   const [films, setFilms] = useState([]);
 
   useEffect(() => {
-    fetch("https://ghibliapi.herokuapp.com/films")
+    fetch("https://ghibliapi.vercel.app/films")
       .then((response) => {
         console.log(response);
         return response.json();
