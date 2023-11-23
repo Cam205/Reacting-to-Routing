@@ -6,7 +6,7 @@ const People = (props) => {
   const [people, setPeople] = useState([]);
 
   useEffect(() => {
-    fetch("https://ghibliapi.vercel.app/people")
+    fetch(`https://ghibliapi.vercel.app/people`)
       .then((response) => {
         console.log(response);
         return response.json();
