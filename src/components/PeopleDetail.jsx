@@ -6,7 +6,7 @@ const PeopleDetail = () => {
   const { peopleid } = useParams();
 
   useEffect(() => {
-    fetch(`https://ghibliapi.herokuapp.com/people/${peopleid}`)
+    fetch(`https://ghibliapi.vercel.app/people/${peopleid}`)
       .then((response) => {
         console.log(response);
         return response.json();

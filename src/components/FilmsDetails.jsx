@@ -6,7 +6,7 @@ const FilmsDetail = () => {
   const { filmid } = useParams();
 
   useEffect(() => {
-    fetch(`https://ghibliapi.herokuapp.com/films/${filmid}`)
+    fetch(`https://ghibliapi.vercel.app/films/${filmid}`)
       .then((response) => {
         console.log(response);
         return response.json();
